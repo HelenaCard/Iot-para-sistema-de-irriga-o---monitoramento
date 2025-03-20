@@ -13,9 +13,11 @@ O projeto foi relizado na plataforma [Wokwi](https://wokwi.com/) para simulaçã
 
 [Documentação disponível aqui](https://docs.wokwi.com/pt-BR/)
 
+### Problema 
+
 A irrigação manual em plantações exige monitoramento constante e intervenção humana, resultando em ineficiência e potencial desperdício de água. A necessidade de eliminar a dependência de sistemas manuais e otimizar o processo de irrigação torna-se crucial para garantir o uso eficiente dos recursos hídricos e aumentar a produtividade agrícola.
 
-##Solução: 
+### Solução: 
 
 Desenvolver um sistema de irrigação automatizado baseado em IoT, utilizando um ESP32 e um sensor DHT22. O sistema monitora a temperatura e a umidade do local, acionando automaticamente a irrigação quando necessário. Além disso, fornece feedback visual através de LEDs, indicando o status da umidade e da temperatura em tempo real. Os dados coletados são enviados para um broker MQTT, garantindo o monitoramento remoto das condições da plantação de qualquer local com acesso à internet. Os LEDs acendem ou apagam conforme a umidade e temperatura aumentam ou diminuem, fornecendo um retorno claro do estado da plantação.
 
