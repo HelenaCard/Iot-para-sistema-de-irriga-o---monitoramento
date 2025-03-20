@@ -41,12 +41,19 @@ Aguarda 15 segundos antes de repetir o processo.
 Sensor DHT22: mede umidade e temperatura.
 LEDs:
 Vermelho: umidade baixa.
+
 Verde: umidade alta.
+
 Normal: temperatura ideal.
+
 MQTT: envia dados para um broker (ex: test.mosquitto.org).
+
 Saída Esperada
+
 Monitor Serial:
+
 Exibe o status da conexão Wi-Fi, leituras do sensor e mensagens MQTT.
+
 LEDs:
 Indicam visualmente o estado da umidade e da temperatura.
 Broker MQTT:
