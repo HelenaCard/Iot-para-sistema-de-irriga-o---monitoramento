@@ -4,11 +4,20 @@
 
 O projeto foi relizado na plataforma [Wokwi](https://wokwi.com/) para simulação e produção do código de comando para o sistema de irrigação. Para testar o funcionamento do sistema utilizamos também o [Cliente Test](https://testclient-cloud.mqtt.cool/).
 
-### Problema:
+## Interface da Plataforma Wokwi
+![Captura de tela 2025-03-20 153232](https://github.com/user-attachments/assets/5389c9c6-a6ce-46a9-83b4-714e8308be86)
 
-Para não utilizar mais sistemas manuais, em que, o indivíduo tem que cuidar quando há necessidade de uma área de plantação ser irrigada, criei um projeto base que permite essa área ser irrigada a partir de dispositivos que controlam a temperatura e umidade. O código monitora a umidade e a temperatura usando um sensor DHT22 conectado a um ESP32. Com base nos valores lidos e controlando LEDs para indicar o estado da umidade e da temperatura e publicando os dados em um broker MQTT para monitoramento remoto. Problema: Iot em sistemas de irrigação para diminuir o uso de ações manuais. 
+## Documentação da platafroma WOKWI 
 
-### Solução: Automatizar por meio de dispositivo IoT (EPS32) quando a horta será irrigada. Assim, os leds tendem a acender ou apagar conforme a umidade e temperatura aumentam ou diminuem.
+![Captura de tela 2025-03-20 153408](https://github.com/user-attachments/assets/67143979-9522-4394-8b89-56871e6207a4)
+
+[Documentação disponível aqui](https://docs.wokwi.com/pt-BR/)
+
+A irrigação manual em plantações exige monitoramento constante e intervenção humana, resultando em ineficiência e potencial desperdício de água. A necessidade de eliminar a dependência de sistemas manuais e otimizar o processo de irrigação torna-se crucial para garantir o uso eficiente dos recursos hídricos e aumentar a produtividade agrícola.
+
+##Solução: 
+
+Desenvolver um sistema de irrigação automatizado baseado em IoT, utilizando um ESP32 e um sensor DHT22. O sistema monitora a temperatura e a umidade do local, acionando automaticamente a irrigação quando necessário. Além disso, fornece feedback visual através de LEDs, indicando o status da umidade e da temperatura em tempo real. Os dados coletados são enviados para um broker MQTT, garantindo o monitoramento remoto das condições da plantação de qualquer local com acesso à internet. Os LEDs acendem ou apagam conforme a umidade e temperatura aumentam ou diminuem, fornecendo um retorno claro do estado da plantação.
 
 ### Funcionamento Geral Conexão Wi-Fi: 
 
