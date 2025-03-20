@@ -10,17 +10,23 @@ Para não utilizar mais sistemas manuais, em que, o indivíduo tem que cuidar qu
 ### Solução: Automatizar por meio de dispositivo IoT (EPS32) quando a horta será irrigada. Assim, os leds tendem a acender ou apagar conforme a umidade e temperatura aumentam ou diminuem.
 
 ### Funcionamento Geral Conexão Wi-Fi: 
-O ESP32 se conecta a uma rede Wi-Fi para se comunicar com o broker MQTT. 
+O ESP32 se conecta a uma rede Wi-Fi para se comunicar com o broker MQTT.
+
 Leitura do Sensor DHT22: monitora a umidade e a temperatura do ambiente. 
 
 ### Controle dos LEDs: 
 LED Vermelho: acende se a umidade estiver baixa (< 50%).
+
 LED Verde: acende se a umidade estiver alta (>= 51%).
+
 LED Normal: acende se a temperatura estiver na faixa normal (18°C a 28°C).
+
 
 ### Publicação MQTT:
 Envia os dados de umidade e temperatura para os tópicos MQTT:
+
 umidade: estado da umidade (baixa, alta ou normal).
+
 temperatura: estado da temperatura (normal ou fora da faixa).
 
 ### Temporização:
@@ -32,14 +38,20 @@ Inicializa os pinos dos LEDs, o sensor DHT22, a conexão Wi-Fi e o cliente MQTT.
 
 ### Loop:
 Verifica a conexão MQTT.
+
 Lê a umidade e a temperatura.
+
 Controla os LEDs com base nos valores lidos.
+
 Publica os dados no broker MQTT.
+
 Aguarda 15 segundos antes de repetir o processo.
 
 ### Componentes
 Sensor DHT22: mede umidade e temperatura.
+
 LEDs:
+
 Vermelho: umidade baixa.
 
 Verde: umidade alta.
@@ -48,15 +60,17 @@ Normal: temperatura ideal.
 
 MQTT: envia dados para um broker (ex: test.mosquitto.org).
 
-Saída Esperada
+## Saída Esperada
 
-Monitor Serial:
+### Monitor Serial:
 
 Exibe o status da conexão Wi-Fi, leituras do sensor e mensagens MQTT.
 
 LEDs:
 Indicam visualmente o estado da umidade e da temperatura.
+
 Broker MQTT:
+
 Recebe os dados publicados para monitoramento remoto.
 
 ### Miniprojeto Wokwi
